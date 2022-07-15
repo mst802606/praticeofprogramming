@@ -1,0 +1,66 @@
+.who_we_are{
+    margin-top: 3rem;
+    background: -webkit-linear-gradient( #b42033, #3c3b6e);
+}
+.who_we_are_container{
+    display: grid;
+    grid-template-columns:40% 60% ;
+    gap: 5rem;
+}
+.who_we_are_right > p{
+    margin: 1.6rem 0 2.5rem;
+}
+
+.what_we_do{
+    background: var(--color-bg1);
+}
+.what_we_do_container{
+    display: grid;
+    grid-template-columns:60% 40% ;
+    gap: 5rem;
+}
+.what_we_do_left > p{
+    margin: 2rem 0 2.5rem;
+}
+
+
+.team{
+    background: var(--color-bg);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.team_member{
+    transition: var(--transition);
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+}
+.team_member:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+}
+.team_member_image img{
+    border-radius: 50%;
+    filter: saturate(0);
+}
+.team_member:hover img{
+    filter: saturate(1);
+}
+.team_member_info *{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+.team_member_info p{
+    color: var(--color-light);
+}
+.team_member_socials{
+    margin-top: 1rem;
+}
+.team_member_socials a{
+    text-align: center;
+    margin-left: 18%;
+}
